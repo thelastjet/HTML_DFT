@@ -9,16 +9,52 @@
 <body>
     <div>
         <form action="">
-            <label for="fname">First Name:</label><input type="text"><br>
-            <label for="lname">Last Name:</label><input type="text"><br>
-            <label for="email">Email:</label><input type="email"><br>
-            <label for="programmingExperience">Programming Experience:</label>
-            <label for="beginner">Beginner</label><input type="radio">
-            <label for="intermediate">Intermediate</label><input type="radio">
-            <label for="expert"></label>Expert<input type="radio"><br>
-            <label for="desiredCareer">Desired Career:</label><input type="text"><br><br>
-            <input type="submit" value="Submit">
-        </form>
+            <label for="fname">First Name:</label>
+            <input 
+              type="text"
+              name="firstname"
+              id="firstname"
+              placeholder="Jane"
+              required
+            />
+            <br />
+            <label for="lname">Last Name:</label>
+            <input
+              type="text"
+              name="lastname"
+              id="lastname"
+              placeholder="Doe"
+            />
+            <br />
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="your@email.com"
+              required
+            />
+            <br />
+            <div>
+                <h3>Programming Experience</h3>
+                <label for="beginner">Beginner</label>
+                <input type="radio" name="beginner" id="beginner" />
+                <br />
+                <label for="intermediate">Intermediate</label>
+                <input type="radio" name="intermediate" id="intermediate" />
+                <br />
+                <label for="expert">Expert</label>
+                <input type="radio" name="expert" id="expert" />
+            </div>
+            <div>
+                <label for="desiredCareer">Desired Career:</label>
+                <input type="text" name="desiredCareer" id="desiredCareer" />
+            </div>
+            <input type="submit" value="Submit" /> 
+        </form> 
+    </div>
+    <hr />
+    <div>
         <table>
             <tr>
                 <th>First Name</th>
